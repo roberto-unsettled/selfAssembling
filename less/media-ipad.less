@@ -1,0 +1,65 @@
+//main: globals.less
+
+@margin-topBottom: 33px;
+@padding-leftRight: 55px;
+
+#welcome-section {
+    padding: 52px @padding-leftRight 0 @padding-leftRight;
+    max-height: 320px;
+    .title {
+        font-size: 60px;
+        line-height: 46px;
+        width: 60%;
+        &::after {
+            left: 153px;
+            border-left-width: 10px;
+            border-right-width: 10px;
+            border-top-width: 10px;
+        }
+    }
+}
+
+#many_me {
+    width: 40%;
+    height: 162px;
+    transform: scale(1.2);
+}
+
+.text_small {
+    font-size: 20px;
+    line-height: 25px;
+    margin: @margin-topBottom auto;
+}
+.text_big {
+    font-size: 26px;
+    line-height: 33px;
+    margin: @margin-topBottom auto;
+}
+.second_title {
+    font-size: 74px;
+    line-height: 61px;
+    padding: 68px 0;
+    margin: 49px auto 0 auto;
+}
+.talk-container{
+    padding-bottom: @margin-topBottom;
+}
+.big_mail {
+    font-size: 46px;
+    line-height: 40px;
+    &.copied::before {
+        height: 100%;
+    }
+    &::before {
+        top: -4px;
+        font-size: 23px;
+        line-height: 40px;
+    }
+    &::after {
+        bottom: 0px;
+    }
+}
+#me_jengas {
+    background-size: 139% auto;
+    background-position: -137px 28px;
+}

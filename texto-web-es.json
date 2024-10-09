@@ -1,0 +1,32 @@
+{
+  "menu": {
+    "about_us": "Sobre Nosotros",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
+  "intro": {
+    "titulo": "Inestable - Inquieta - Inacabada",
+    "texto": "Nuestra práctica es parte de la vida y la vida no decelera, pausa, o espera el momento adecuado para ser.<br/> El concepto de entrenamiento es una abstracción, una simplificación de las necesidades de la vida que no satisface la realidad cuando la vida golpea.<br/>En esta práctica eres tú quien debe observar y entender, nosotros nos moveremos en direcciones opuestas para llegar al mismo punto.<br />La primera y principal habilidad que vamos a trabajar en desarrollar es la observación: interior, exterior, patrones, ritmos, estrategias y contra-estrategias.<br />Crear un mapa de quién eres: pasado, presente, futuro.<br />Crear un mapa de cómo: te mueves, respiras y piensas.<br />Crear un mapa de tu consciencia es una imagen que desde el momento de su creación se va a quedar obsoleta.<br />Es una Tarea Imposible.<br />A través de lo imposible, de lo extraordinario, conquistamos lo ordinario."
+  },
+  "about_us": {
+    "title": "Nadie",
+    "persona-1-1": "En 2016 asistí a un workshop de Fighting Monkey y desde ese momento he estado siguiendo la <b>Fighting Monkey Practice</b>. Me sentí atraido por las formas y por los principios no verbalizados detrás de ellas.",
+    "persona-1-2": "En 2018 dejando de lado lo práctico o lógico, me mudé a NYC con mi pareja, allí di el paso a centrarme plenamente en la enseñanza de las disciplinas del movimiento, sobretodo en Parkour y utilizando los principios de FM.",
+    "persona-1-3": "En 2020 decidí que quería profundizar más en el viaje hacia lo desconocido que <b>FM</b> proponía y participé en el programa de Mentorship. Actualmente en Londres trabajo como Inspire by FM Instructor y como Parkour Coach.",
+    "persona-1-4": "Durante todos estos años he tenido la suerte de impartir y participar en diversos talleres, lo que me ha llevado a conocer y aprender de gente increible que entre otras cosas me ha llevado a ser parte del <b>Ferus Animi//Terra Nova Collective</b> dirigido por Tomislav English",
+    "persona-2-titulo": "Vocabulario Del Movimiento",
+    "persona-2-1": "El cambio más grande en mi práctica se produjo en 2015 cuando descubrí a Ido Portal con su perspectiva generalista y me convertí en alumno de su método. También he estado siguiendo el trabajo y asistiendo a talleres de Jozef & Linda - Fighting Monkey - como parte de mi viaje, mi práctica y mi filosofía.",
+    "persona-2-2": "Desde entonces he estado asistiendo a muchos talleres y cursos diferentes de un perfil muy heterogéneo.",
+    "persona-2-3": "A día de hoy sigo elaborando mi propio currículum desde una perspectiva teórica pero altamente experiencial.",
+    "persona-2-4": "Mi objetivo contigo es desarrollar una práctica de movimiento, como concepto, desde una perspectiva generalista: fuerza y movilidad, equilibrio de manos, manipulación de objetos, vocabulario y calidad de movimiento, locomoción, suelo y mucho más."
+  },
+  "education": {
+    "title": "Formación",
+    "title-1": "Formación Online",
+    "texto-1": "<strong>Unsettled Practice</strong><br />Una vez cada 3 meses abrimos plazas en el grupo online, si tienes interés en unirte escríbenos un email a:<br />understanding.zero.collective@gmail.com",
+    "cta-1": "descarga el dosier",
+    "title-2": "Talleres",
+    "texto-2": "<strong>Taller Inspire By FM</strong><br>Si estás interesado en organizar un taller Inspire by FM, hablemos y hagámoslo posible.",
+    "cta-2": "descarga el dosier"
+  }
+}

@@ -1,0 +1,301 @@
+//main: globals.less
+
+body {
+  color: @color1;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+/////animations------------------------------------------------------------
+    @delayAnimation_1: .5s;
+    @timeAnimation_1: .4s;
+    @repetitionAnimation_1: 1;
+
+    @delayAnimation_2: ((@delayAnimation_1 + @timeAnimation_1) + 0.2s);
+    @timeAnimation_2: 1.2s;
+    @repetitionAnimation_2: 1;
+    
+    @delayAnimation_3: (@delayAnimation_2 + (@timeAnimation_2 * @repetitionAnimation_2) + .1s);
+    @timeAnimation_3: 0.8s;
+    @repetitionAnimation_3: 1;
+//START: animationCenterToLeft
+
+@bottomStart:                 -11px;
+@bottomEnd:                   -20px;
+
+.animatedTopBottom {
+    0% { bottom:        @bottomStart; }
+    50% { bottom:       @bottomEnd; }
+    100% { bottom:      @bottomStart; }
+}
+@keyframes animationTopBottom {
+    .animatedTopBottom;
+}
+
+.animatedScaleBig {
+    0% { transform: scale(0.7) rotate(0deg); }
+    30% { transform: scale(1.1) rotate(-38deg); }
+    70% { transform: scale(1.1) rotate(10deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+@keyframes animationScaleBig {
+    .animatedScaleBig;
+}
+
+.animatedScaleTitle {
+    0% { transform: scale(1, 1); }
+    30% { transform: scale(1, 0.7); }
+    100% { transform: scale(1, 1.6); }
+}
+@keyframes animationScaleTitle {
+    .animatedScaleTitle;
+}
+
+.animationFade {
+    opacity: 0.1;
+    transition: opacity 0.5s 0.1s;
+}
+.animationFade.animated{
+    opacity: 1;
+}
+/* ==========================================================================
+User Styles
+========================================================================== */
+
+#total-wrapper {
+    background-color: @colorBgOut;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.site-wrapper {
+    margin: 0 auto;
+    max-width: (@max-width-site - (@padding-container * 2));
+}
+.site-wrapper-inner {
+    color: @color3;
+}
+.bg-color-1 {
+    background-color: @color1;
+}
+.bg-color-2 {
+    background-color: @color2;
+}
+.bg-color-3 {
+    background-color: @color3;
+}
+.cover {
+    padding: 0;
+}
+.cover-heading {
+    margin: 0;
+}
+// .container {
+//     //padding: 0;
+// }
+
+#welcome-section {
+    height: 80vh;
+    max-height: 592px;
+    padding: 112px @padding-container 0px @padding-container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    .title {
+        font-size: 125px;
+        line-height: 93px;
+        //transform: scale(1, 1.6);
+        width: 60%;
+        position: relative;
+        .animationSimple(animationScaleTitle forwards @repetitionAnimation_1 @timeAnimation_1 ease-in-out @delayAnimation_1);
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: @bottomStart;
+            left: 318px;
+            width: 0;
+            height: 0; 
+            border-left: 19px solid transparent;
+            border-right: 19px solid transparent;
+            border-top: 19px solid @color3;
+            .animationSimple(animationTopBottom forwards @repetitionAnimation_2 @timeAnimation_2 ease-in-out @delayAnimation_2);
+        }
+    } //title
+    
+}//welcome-section
+
+.inner_welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    &:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    &:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+} //inner_welcome
+
+#many_me {
+    width: 40%;
+    height: 370px;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../img/many_me_1.png');
+}
+
+.second_title {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    line-height: 66px;
+    padding: @padding-container 0;
+    margin: 60px auto 0 auto;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        background-image: url('../img/Inspire_half.png');
+        transform: scale(0.7) rotate(0deg);
+        .animationSimple(animationScaleBig forwards @repetitionAnimation_3 @timeAnimation_3 ease @delayAnimation_3);
+    }
+}//second_title
+
+.text_small {
+    text-align: center;
+    font-size: 28px;
+    line-height: 31px;
+    margin: 60px auto;
+}
+.img_bg {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+#hexagram {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: auto 76%;
+    background-position: center center;
+    background-image: url('../img/hexagram_logo.svg');
+}
+.text_big{
+    text-align: center;
+    font-size: 38px;
+    line-height: 41px;
+    margin: 60px auto;
+}
+#me_jengas {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: auto 90%;
+    background-position: 85px bottom;
+    background-image: url('../img/yo_dos_jengas_amarillo_full.png');
+}
+.talk-container {
+    padding-bottom: @padding-container;
+}
+.big_mail{
+    display: block;
+    font-size: 85px;
+    line-height: 80px;
+    transform: scale(1, 1.6);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &::before {
+        content: "copied! see you soon ;D";
+        display: block;
+           position: absolute;
+           top:0;
+           left: 0;
+           width: 100%;
+           height: 0%;
+           overflow: hidden;
+           font-size: 30px;
+           line-height: 80px;
+           text-align: center;
+        z-index: 0;
+        opacity: 0;
+        transition: all .4s;
+    }
+    &.copied{
+        &::before {
+           height: 90%;
+           opacity: 0.97;
+           z-index: 20;
+           background-color: @color1;
+        }
+    }
+    &::after {
+        content: "tap to copy";
+       display: block;
+       position: absolute;
+       bottom: 20px;
+       left: 0;
+       width: 100%;
+       height: 16px;
+       font-size: 12px;
+       opacity: 0.5;
+   }
+}//big_mail
+
+#footer {
+    padding: 0 @padding-container;
+}
+.contact {
+    color: @color1;
+    padding: 20px;    
+    position: relative;
+    text-align: center;
+}
+.contact-details {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    &::before {
+         content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+}
+.social {
+    &::before{
+        background-image: url('../img/instagram.svg');
+    }
+}
